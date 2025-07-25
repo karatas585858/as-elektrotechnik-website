@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AS Elektrotechnik – Freising</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    .hero {
+      position: relative;
+      height: 90vh;
+      background: url('https://images.pexels.com/photos/4254165/pexels-photo-4254165.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')
+        center center / cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(255, 255, 255, 0.6);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 20px;
+    }
+
+    .hero-content img {
+      max-width: 500px;
+      width: 90%;
+      height: auto;
+      margin-bottom: 30px;
+    }
+
+    .hero h1 {
+      font-size: 2.2em;
+      color: #2c3e50;
+      margin-bottom: 15px;
+    }
+
+    .burger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      margin: 15px auto;
+    }
+
+    .burger div {
+      width: 25px;
+      height: 3px;
+      background: #2c3e50;
+      margin: 4px 0;
+    }
+
+    nav.navigation {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      padding: 15px 0;
+      background: #f0c040;
+    }
+
+    nav.navigation a {
+      text-decoration: none;
+      padding: 10px 18px;
+      border-radius: 5px;
+      background-color: white;
+      color: #2c3e50;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    nav.navigation a:hover {
+      background-color: #ffe08a;
+    }
+
+    nav.navigation a.active {
+      background-color: #2c3e50;
+      color: white;
+    }
+
+    .section {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #2c3e50;
+    }
+
+    .description-section {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .half-width {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    iframe.half-width {
+      width: 100%;
+      height: 400px;
+      border: none;
+    }
+
+    .contact-info h1,
+    .contact-info p,
+    .contact-info b {
+      text-align: center;
+      margin: 10px 0;
+    }
+
+    .contact-info a {
+      color: #2980b9;
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+
+    footer a {
+      color: #f0c040;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 700px) {
+      nav.navigation {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav.navigation.active {
+        display: flex;
+      }
+
+      .burger {
+        display: flex;
+      }
+
+      .description-section {
+        flex-direction: column;
+      }
+
+      .half-width {
+        width: 100%;
+      }
+    }
+
+    @media (min-width: 800px) {
+      .description-section {
+        flex-direction: row;
+      }
+
+      .half-width {
+        width: 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="hero-content">
+      <img src="img/logo.png" alt="AS Elektrotechnik Logo">
+      <h1>Nr. 1 Elektrotechnik aus Freising</h1>
+    </div>
+  </section>
+
+  <!-- Burger-Menü -->
+  <div class="burger" onclick="document.querySelector('nav.navigation').classList.toggle('active')">
+    <div></div><div></div><div></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navigation">
+    <a class="menu-link" href="index.html">Home</a>
+    <a class="menu-link" href="leistungen.html">Leistungen</a>
+    <a class="menu-link" href="projekte.html">Projekte</a>
+    <a class="menu-link" href="kontakt.html">Kontakt</a>
+  </nav>
+
+  <!-- Kontakt & Anfahrt -->
+  <section class="section">
+    <h2>📍 Anfahrt & Kontakt</h2>
+    <div class="description-section">
+      <div class="half-width contact-info">
+        <p><strong>Achtung:</strong> Für alle Anliegen rund um das Elektrohandwerk kannst du uns jederzeit telefonisch oder per E-Mail kontaktieren.</p>
+        <h1>📞 0151 1521 5330</h1>
+        <b>Adem Topal – AS-Elektrotechnik</b><br>
+        <b>Werdenfelser Str. 3</b><br>
+        <b>85354 Freising</b><br>
+        <b>✉️ <a href="mailto:Topal@mail.de">Topal@mail.de</a></b>
+      </div>
+
+      <iframe class="half-width"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d440.0378222156053!2d11.75341088800065!3d48.41088058642409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e6ac512a31055%3A0xd9b4e8099a01210!2sAS-Elektrotechnik!5e1!3m2!1sde!2sde!4v1717513024805!5m2!1sde!2sde"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 AS Elektrotechnik · <a href="#">Impressum</a> · <a href="#">Datenschutz</a></p>
+    <p>Werdenfelser Str. 3 · 85354 Freising · <a href="mailto:topal@mail.de">topal@mail.de</a></p>
+  </footer>
+
+  <script>
+    const links = document.querySelectorAll('.menu-link');
+    const path = window.location.pathname.split("/").pop();
+    links.forEach(link => {
+      if (link.getAttribute("href") === path) {
+        link.classList.add("active");
+      }
+    });
+  </script>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>

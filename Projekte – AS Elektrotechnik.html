@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projekte – AS Elektrotechnik</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:'Roboto',sans-serif;background:#f4f4f4;color:#333;}
+    header{background:#2c3e50;color:#fff;padding:30px 20px;text-align:center;}
+    header h1{margin-bottom:10px;}
+    .navigation{display:flex;justify-content:center;gap:15px;flex-wrap:wrap;}
+    .menu-link{text-decoration:none;padding:10px 16px;background:#f0c040;color:#2c3e50;border-radius:5px;font-weight:bold;transition:0.3s;}
+    .menu-link:hover{background:#e0ac30;}
+    .section{padding:40px 20px;max-width:1200px;margin:auto;}
+    h2{text-align:center;color:#2c3e50;margin-bottom:30px;}
+    .project-grid{display:grid;gap:30px;grid-template-columns:1fr;}
+    .project-card{background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,0.1);}
+    .project-card img{width:100%;height:200px;object-fit:cover;}
+    .project-card .content{padding:20px;}
+    .project-card h3{margin-bottom:10px;color:#2c3e50;}
+    @media (min-width:700px){.project-grid{grid-template-columns:repeat(2,1fr);}}
+    @media (min-width:1000px){.project-grid{grid-template-columns:repeat(3,1fr);}}
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Unsere Projekte</h1>
+    <nav class="navigation">
+      <a class="menu-link" href="index.html">Home</a>
+      <a class="menu-link" href="leistungen.html">Leistungen</a>
+      <a class="menu-link" href="projekte.html">Projekte</a>
+      <a class="menu-link" href="kontakt.html">Kontakt</a>
+    </nav>
+  </header>
+
+  <section class="section">
+    <h2>Beispiele erfolgreicher Elektroinstallationen</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="https://images.pexels.com/photos/3740744/pexels-photo-3740744.jpeg" alt="Elektriker verkabelt Schaltschrank">
+        <div class="content"><h3>Schaltschrank-Installation</h3><p>Upgrade einer Industrieanlage mit neuem Steuerungspanel.</p></div>
+      </div>
+      <div class="project-card">
+        <img src="https://images.pexels.com/photos/4254165/pexels-photo-4254165.jpeg" alt="Elektroinstallation Altbau">
+        <div class="content"><h3>Leitungsverkabelung Altbau</h3><p>Hochwertige Verkabelung nach aktuellem Sicherheitsstandard.</p></div>
+      </div>
+      <div class="project-card">
+        <img src="https://images.pexels.com/photos/5924824/pexels-photo-5924824.jpeg" alt="Steckdosen Installation">
+        <div class="content"><h3>Wohnungsinstallation</h3><p>Erneuerung aller Steckdosen und Lichtkreise in Stadtwohnung.</p></div>
+      </div>
+      <div class="project-card">
+        <img src="https://images.pexels.com/photos/4500385/pexels-photo-4500385.jpeg" alt="Elektroarbeiten Außenbereich">
+        <div class="content"><h3>Außenverteilung</h3><p>Neue Stromverteilung für Garten und Außenanlagen.</p></div>
+      </div>
+      <div class="project-card">
+        <img src="https://images.pexels.com/photos/3807087/pexels-photo-3807087.jpeg" alt="Photovoltaik Installation">
+        <div class="content"><h3>PV-Anlage mit Speicher</h3><p>Installation einer 9 kWp PV-Anlage mit E‑Mobilitätseinbindung.</p></div>
+      </div>
+      <div class="project-card">
+        <img src="https://images.pexels.com/photos/667838/pexels-photo-667838.jpeg" alt="Bewegungsmelder Installation">
+        <div class="content"><h3>Bewegungsmelder-Flur</h3><p>Nachtbeleuchtung optimiert für Mehrparteienhaus.</p></div>
+      </div>
+      <div class="project-card">
+        <img src="https://images.pexels.com/photos/615022/pexels-photo-615022.jpeg" alt="Wallbox Ladestation">
+        <div class="content"><h3>Wallbox-Montage</h3><p>Installation von zwei Ladestationen in Tiefgarage.</p></div>
+      </div>
+      <div class="project-card">
+        <img src="https://images.pexels.com/photos/3740744/pexels-photo-3740744.jpeg" alt="Notbeleuchtung Halle">
+        <div class="content"><h3>Notbeleuchtung Halle</h3><p>Brandschutz-Notlicht mit zentralem Batteriepack.</p></div>
+      </div>
+      <div class="project-card">
+        <img src="https://images.pexels.com/photos/3760731/pexels-photo-3760731.jpeg" alt="Kindgerechte Elektroinstallation">
+        <div class="content"><h3>Kindergarten-Elektro</h3><p>Kindgerechte Installationen mit Zeitschaltung.</p></div>
+      </div>
+      <div class="project-card">
+        <img src="https://images.pexels.com/photos/4398161/pexels-photo-4398161.jpeg" alt="Gartenbeleuchtung LED">
+        <div class="content"><h3>Gartenbeleuchtung</h3><p>LED-Beleuchtung mit Bewegungsmeldern für sicheren Außenbereich.</p></div>
+      </div>
+    </div>
+  </section>
+<!-- Burger-Menü Button -->
+<div class="burger" onclick="document.querySelector('.navigation').classList.toggle('active')">
+  <div></div><div></div><div></div>
+</div>
+
+<!-- Navigation -->
+<nav class="navigation">
+  <a class="menu-link" href="index.html">Home</a>
+  <a class="menu-link" href="leistungen.html">Leistungen</a>
+  <a class="menu-link" href="projekte.html">Projekte</a>
+  <a class="menu-link" href="kontakt.html">Kontakt</a>
+</nav>
+<footer>
+  <p>&copy; 2025 AS Elektrotechnik · <a href="#">Impressum</a> · <a href="#">Datenschutz</a></p>
+  <p>Werdenfelser Str. 3 · 85354 Freising · <a href="mailto:topal@mail.de">topal@mail.de</a></p>
+</footer>
+<script>
+  const links = document.querySelectorAll('.menu-link');
+  const path = window.location.pathname.split("/").pop();
+  links.forEach(link => {
+    if (link.getAttribute("href") === path) {
+      link.classList.add("active");
+    }
+  });
+</script>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>

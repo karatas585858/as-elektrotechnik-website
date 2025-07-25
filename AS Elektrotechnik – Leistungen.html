@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Professionelle Elektrotechnik-Leistungen von Adem Topal in Freising – zuverlässig, erfahren und kundenorientiert.">
+  <title>AS Elektrotechnik – Leistungen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+    }
+
+    header img {
+      max-width: 180px;
+      height: auto;
+    }
+
+    .burger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      margin: 10px 20px;
+    }
+
+    .burger div {
+      width: 25px;
+      height: 3px;
+      background: #2c3e50;
+      margin: 4px 0;
+    }
+
+    nav.navigation {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 10px 0;
+    }
+
+    nav.navigation.active {
+      display: flex;
+    }
+
+    .menu-link {
+      text-decoration: none;
+      padding: 10px 18px;
+      border-radius: 5px;
+      color: white;
+      background-color: #f0c040;
+      transition: background-color 0.3s;
+      font-weight: 500;
+    }
+
+    .menu-link:hover {
+      background-color: #e0b830;
+    }
+
+    .menu-link.active {
+      background-color: #2c3e50;
+      color: white;
+    }
+
+    h1.headline {
+      font-size: 2em;
+      margin: 20px 0;
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    h1 .yellow {
+      color: #f0c040;
+    }
+
+    .content-section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .text-section {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+
+    .text-section h2, .text-section h3 {
+      color: #2c3e50;
+    }
+
+    .text-section p {
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+
+    footer a {
+      color: #f0c040;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 700px) {
+      nav.navigation {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav.navigation.active {
+        display: flex;
+      }
+
+      .burger {
+        display: flex;
+      }
+    }
+
+    @media (min-width: 800px) {
+      .content-section {
+        flex-direction: row;
+        gap: 40px;
+      }
+
+      .video-wrapper, .text-section {
+        flex: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="img/logo.png" alt="AS Elektrotechnik Logo" />
+
+    <!-- Burger-Menü Button -->
+    <div class="burger" onclick="document.querySelector('.navigation').classList.toggle('active')">
+      <div></div><div></div><div></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navigation">
+      <a class="menu-link" href="index.html">Home</a>
+      <a class="menu-link" href="leistungen.html">Leistungen</a>
+      <a class="menu-link" href="projekte.html">Projekte</a>
+      <a class="menu-link" href="kontakt.html">Kontakt</a>
+    </nav>
+  </header>
+
+  <h1 class="headline"><span class="yellow">Unsere Leistungen</span></h1>
+
+  <main class="content-section">
+    <div class="video-wrapper">
+      <iframe
+        src="https://www.youtube.com/embed/S0VLUGzWQUc?si=21zTifgfK_Cw8E4U"
+        title="Elektroarbeiten Video"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <div class="text-section">
+      <h2>Warum Sie sich für Adem Topal als Ihren Elektriker entscheiden sollten</h2>
+      <p>Adem Topal ist nicht nur ein Elektriker – er ist Ihr zuverlässiger Partner für alle elektrischen Herausforderungen, der Ihre Projekte mit Erfahrung, Leidenschaft und Präzision umsetzt.</p>
+
+      <h3>1. Fachliche Kompetenz und Erfahrung</h3>
+      <p>Jahrelange Berufserfahrung und technisches Know-how garantieren eine einwandfreie Ausführung – von Standardinstallationen bis zu komplexen Projekten.</p>
+
+      <h3>2. Individuelle Lösungen</h3>
+      <p>Jedes Projekt ist einzigartig. Wir hören zu, planen mit Ihnen und liefern maßgeschneiderte Lösungen – funktional, sicher und ästhetisch.</p>
+
+      <h3>3. Zuverlässigkeit und Pünktlichkeit</h3>
+      <p>Verlässlichkeit ist unser Markenzeichen. Wir halten Termine ein und sorgen für reibungslose Abläufe – ohne versteckte Kosten.</p>
+
+      <h3>4. Kundenorientierter Service</h3>
+      <p>Ihre Zufriedenheit steht an erster Stelle. Wir legen Wert auf persönliche Betreuung, Transparenz und hochwertige Ergebnisse.</p>
+
+      <h3>5. Nachhaltigkeit und Innovation</h3>
+      <p>Wir setzen auf energieeffiziente Technik und nachhaltige Lösungen, die Ihren Geldbeutel und die Umwelt schonen.</p>
+
+      <h2>Fazit: Vertrauen Sie auf Adem Topal!</h2>
+      <p>Setzen Sie auf Qualität, Sicherheit und Kundennähe. Kontaktieren Sie uns – wir freuen uns auf Ihr Projekt!</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AS Elektrotechnik · <a href="#">Impressum</a> · <a href="#">Datenschutz</a></p>
+    <p>Werdenfelser Str. 3 · 85354 Freising · <a href="mailto:topal@mail.de">topal@mail.de</a></p>
+  </footer>
+
+  <script>
+    const links = document.querySelectorAll('.menu-link');
+    const path = window.location.pathname.split("/").pop();
+    links.forEach(link => {
+      if (link.getAttribute("href") === path) {
+        link.classList.add("active");
+      }
+    });
+  </script>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
