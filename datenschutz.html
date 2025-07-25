@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AS Elektrotechnik – Datenschutz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>AS Elektrotechnik</h1>
+  </header>
+
+  <div class="burger" onclick="document.querySelector('.navigation').classList.toggle('active')">
+    <div></div><div></div><div></div>
+  </div>
+
+  <nav class="navigation">
+    <a class="menu-link" href="index.html">Home</a>
+    <a class="menu-link" href="leistungen.html">Leistungen</a>
+    <a class="menu-link" href="projekte.html">Projekte</a>
+    <a class="menu-link" href="kontakt.html">Kontakt</a>
+  </nav>
+
+  <div class="container">
+    <h2>Datenschutzerklärung</h2>
+    <p>Informationen zum Datenschutz und Umgang mit Ihren Daten.</p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 AS Elektrotechnik · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></p>
+    <p>Werdenfelser Str. 3 · 85354 Freising · <a href="mailto:topal@mail.de">topal@mail.de</a></p>
+  </footer>
+
+  <script>
+    const links = document.querySelectorAll('.menu-link');
+    const path = window.location.pathname.split("/").pop();
+    links.forEach(link => {
+      if (link.getAttribute("href") === path) {
+        link.classList.add("active");
+      }
+    });
+  </script>
+
+</body>
+</html>
